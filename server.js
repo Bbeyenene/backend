@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 
-app.get('/api', (req, res)=>{
+app.get('/', (req, res)=>{
     res.json({mesg: 'this is a message from the backend'})
 })
 
